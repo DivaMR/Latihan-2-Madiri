@@ -1,1 +1,154 @@
-/* ini css */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: pink;
+    transition: 0.5s;
+}   
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20 px 100px;
+    display :flex ;
+    justify-content: space-between ;
+    align-items: center;
+}
+header .logo {
+    max-width: 100px;
+    position:relative;
+    border: 1px solid pink;
+    border-radius: 20px;
+    
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    margin: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .texBox {
+    position: relative;
+    width: 600px;
+}
+
+.content .texBox h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .texBox h2 span {
+    font-size: 1em;
+}
+
+.content .texBox p{
+    color: #fff;
+}
+
+.content .texBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 40px;
+    font-weight: 480;
+    letter-spacing:1px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: pink;
+}
+
+.content .imgbox  {
+    display: flex;
+    width: 100px;
+    padding-right: 50px;
+    justify-content: flex-end;
+    margin-top: 50px;
+    
+    
+}   
+
+.content .imgbox img {
+    max-width: 200px;
+    
+}
+
+.gambar {
+    position: absolute;
+    display: flex;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 20px;
+}
+
+.gambar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transform: 0.5s;
+}
+
+.gambar li:hover{
+    transform: translateX(-15px);
+}
+.gambar li img {
+    max-width: 50px;
+}
+
+.social-media{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.social-media li a{
+    display: inline-block;
+    color: #fff;
+    margin: 9px 0;
+    transform: scale(1.5);
+}
